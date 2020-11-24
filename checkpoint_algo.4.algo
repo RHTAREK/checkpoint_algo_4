@@ -1,0 +1,26 @@
+ALGORITHM
+ PROCEDURE swap(var x,var y :integer)
+VAR
+   tmp :  integer ;
+BEGIN
+  tmp:= x;
+  x:=y;
+  y:=tmp; 
+
+END
+PROCEDURE hand(var tab1 : array of integer)
+VAR
+   i,j,n
+BEGIN
+    n:=tab1.length-1
+   FOR i FROM 0 TO n   DO
+       FOR j FROM 0 TO n-1  DO
+           IF (tab1[j]>tab1[j+1]) THEN
+               swap
+               (tab1[j],tab1[j+1])
+           END_IF
+       END_FOR
+   END_FOR
+
+
+END
